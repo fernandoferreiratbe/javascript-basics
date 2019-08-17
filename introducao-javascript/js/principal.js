@@ -2,7 +2,9 @@ console.log("Fui carregado de um arquivo externo.");
 
 var titulo = document.querySelector(".titulo");
 
-titulo.addEventListener("click", mostraMensagem);
+titulo.addEventListener("click", function() {
+    console.log("Implement first anonymous function.");
+});
 
 function mostraMensagem() {
     console.log("Hello, I have been clicked.");
