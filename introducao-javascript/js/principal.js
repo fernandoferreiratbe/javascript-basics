@@ -2,8 +2,11 @@ console.log("Fui carregado de um arquivo externo.");
 
 var titulo = document.querySelector(".titulo");
 
-console.log(titulo);
-console.log(titulo.textContent);
+titulo.addEventListener("click", mostraMensagem);
+
+function mostraMensagem() {
+    console.log("Hello, I have been clicked.");
+}
 
 var pacientes = document.querySelectorAll(".paciente");
 
@@ -36,5 +39,4 @@ for (var i = 0; i < pacientes.length; i++) {
         imc.textContent = imcCalc.toFixed(2);
     }
 }
-
 
