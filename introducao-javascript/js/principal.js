@@ -43,9 +43,7 @@ for (var i = 0; i < pacientes.length; i++) {
 }
 
 var botaoAdicionar = document.querySelector("#adicionar-paciente");
-
-botaoAdicionar.addEventListener("click", onClickButton())
-
-function onClickButton() {
-    console.log("Teste")
-}
+botaoAdicionar.addEventListener("click", function(event) {
+    event.preventDefault();
+    console.log("Hello, I'm a button and I has been clicked.");
+});
