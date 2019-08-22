@@ -43,17 +43,9 @@ function calculaImc(peso, altura) {
 }
 
 function validarPeso(peso) {
-    if (peso >= 0 && peso <= 500) {
-        return true;
-    }
-
-    return false;
+    return (peso >= 0 && peso <= 500) ? true : false;
 }
 
 function validarAltura(altura) {
-    if (altura >= 0 && altura <= 3.0) {
-        return true;
-    }
-
-    return false;
+    return (altura >= 0 && altura <= 3.0) ? true : false;
 }
