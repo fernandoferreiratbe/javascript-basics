@@ -8,11 +8,12 @@ campoFiltro.addEventListener("input", function() {
             var paciente = pacientes[index];
             var tdNome =  paciente.querySelector(".info-nome");
             var nome = tdNome.textContent;
-    
-            if (nome != this.value) {
-                paciente.classList.add("invisivel");
-            } else {
+            var expressao = new RegExp(this.value, "i");
+
+            if (expressao.test(nome)) {
                 paciente.classList.remove("invisivel");
+            } else {
+                paciente.classList.add("invisivel");
             }
         }
     } else {
