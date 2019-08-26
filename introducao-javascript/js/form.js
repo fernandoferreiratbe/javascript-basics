@@ -85,7 +85,7 @@ function exibeMensagensDeErro(erros) {
     var ul = document.querySelector("#mensagens-erro");
     ul.innerHTML = "";
 
-    erros.forEach(function (erro) {
+    erros.forEach(function(erro) {
         var li = document.createElement("li");
         li.textContent = erro;
         ul.appendChild(li);
